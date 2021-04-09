@@ -1,4 +1,4 @@
-Chapter 04: The SOLID Principles
+Chapter 04: SOLID 법칙
 ================================
 
 Run tests::

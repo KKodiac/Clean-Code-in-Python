@@ -1,20 +1,20 @@
-Chapter 05 - Decorators
+Chapter 05 - 데코레이터[Decorators]
 =======================
 
 Run the tests with::
 
     make test
 
-Creating Decorators
+데코레이터를 생성하는 법
 ^^^^^^^^^^^^^^^^^^^
 
-1. Function decorators
+1. 함수형 데코레이터(Function decorators)
 
    1.1 ``decorator_function_1.py``.
 
    1.2 ``decorator_function_2.py``
 
-2. Class decorators
+2. 클라스 데코레이터(Class decorators)
 
     2.1 ``decorator_class_1.py``
 
@@ -22,20 +22,19 @@ Creating Decorators
 
     2.3 ``decorator_class_3.py``
 
-3. Other decorators (generators, coroutines, etc.).
+3. 그 외 데코레이터(generators, coroutines, 등등.).
 
-4. Passing Arguments to Decorators
+4. 데코레이터에 매개변수 넘기기(Passing Arguments to Decorators)
 
     4.1 As a decorator function: ``decorator_parametrized_1.py``
 
     4.2 As a decorator object: ``decorator_parametrized_2.py``
 
 
-Issues to avoid when creating decorators
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+데코레이터를 생성할 시 피해야 할 것
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Keep the properties of the original attributes (docstring, name, etc.),
-   by using ``functools.wraps``.
+1. ``functools.wraps`` 를 사용해서 기존 어트리뷰트의 특성(property) 을 유지한다(docstring, name, 등 과 같은.)
 
     1.1 ``decorator_wraps_1.py``
 

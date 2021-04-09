@@ -1,4 +1,4 @@
-Chapter 01 - Introduction, Tools, and Formatting
+Chapter 01 - 소개, 도구, 그리고 포매팅
 ================================================
 
 Install dependencies::

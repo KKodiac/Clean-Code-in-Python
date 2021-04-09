@@ -81,4 +81,6 @@ class Point:
 ### Suggestions and Feedback
 [Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
 
-
+### 번역
+[홍성민](https://github.com/KKodiac) 
+쳅터 내의 번역은 천천히 공부하면서 해볼게요
