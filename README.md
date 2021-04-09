@@ -6,50 +6,49 @@ This is the code repository for [Clean Code in Python](https://www.packtpub.com/
 
 **Refactor your legacy code base**
 
-## What is this book about?
-Python is currently used in many different areas such as software construction, systems administration, and data processing. In all of these areas, experienced professionals can find examples of inefficiency, problems, and other perils, as a result of bad code. After reading this book, readers will understand these problems, and more importantly, how to correct them.
+## 이 책은 어떠한 내용을 갖고 있나요?
+파이썬은 현재 소프트웨어 개발, 시스템 관리, 그리고 데이터 처리 등 다양한 분야에서 사용되고 있습니다. 이 분야에서 많은 개발 경험이 있는 전문가들은 안좋은 코드에 의해 일어나는 비효율성, 문제발생, 그리고 다른 위험들을 보여주는 예시를 찾을 수 있습니다. 이 책을 읽은 후, 독자들은 이러한 문제들을 이해하고, 어떻게 고쳐야 하는 지를 알게 될 것입니다.
 
-This book covers the following exciting features:
-Set up tools to effectively work in a development environment 
-Explore how the magic methods of Python can help us write better code 
-Examine the traits of Python to create advanced object-oriented design 
-Understand removal of duplicated code using decorators and descriptors 
-Effectively refactor code with the help of unit tests 
-Learn to implement the SOLID principles in Python 
+이 책은 아래 항목들을 다루고 있습니다:
+효율적인 일을 하기 위한 도구 세팅 하기
+더 좋은 코드를 작성 하기 위해 사용되는 매직 메서드(Magic Methods) 탐구
+고급 객체지향 디자인을 개발하기 위한 파이썬의 특징들을 알아보기
+데코레이터 및 디스크립터 (decorators and descriptors)을 이용한 중복된 코드 제거하는 방법 이해
+유닛 테스트(Unit Test)의 힘을 빌린 효율적인 코드 리팩터링(Code Refactoring)
+SOLID([자세한 정보](https://www.nextree.co.kr/p6960/)) 법칙을 파이썬으로 구현 하는 법 배우기
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1788835832) today!
+만약 책을 구매하고 싶다면 [여기 링크](https://www.amazon.com/dp/1788835832) 를 참고하세요.
 
 <a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
 alt="https://www.packtpub.com/" border="5" /></a>
 
-## Instructions and Navigations
+## 사용법 및 구동법
 
-**Setup**
+**세팅 법**
 
-Create a virtual environment, and once activated run:
+가상 환경을 만들고 만들어 진 후에 아래 명령어를 실행하세요:
 
     make setup
 
-This will install the common dependencies. Besides this, each chapter might
-have additional ones, for which another ``make setup`` will have to be run
-inside that particular directory.
+위 명령어는 필수 항목들을 설치합니다. 이를 제외하고도 각 쳅터는 추가적인 항목 설치가 필요할 수 있습니다.
+그럴 땐 해당 쳅터의 디렉토리에서 ``make setup`` 명령어를 다시 실행해 주세요
 
-Each chapter has its corresponding directory given by its number.
+각 쳅터에 해당하는 숫자로 나열된 디렉토리에 내용들이 정리 되어 있습니다.
 
-Inside each chapter directory, tests can be run by:
+각 쳅터 내의 디렉토리에는 테스트 코드는 아래 명령어를 실행하세요:
 
     make test
 
-This requires the ``make`` application installed (in Unix environments).
-In environments without access to the ``make`` command, the same code can be
-tested by running the commands on the ``Makefile``:
+이것을 실행하려면 ``make`` 도구가 설치가 되어 있어야 합니다. (Unix 환경에서)
+``make`` 명령어가 제공 되지 않는 (윈도우10 과 같은) 환경에서는 ``Makefile`` 에 있는
+명령어를 실행하면 같은 코드를 테스트 하고 실행 할 수 있습니다:
 
     python -m doctest *.py
     python -m unittest *.py
 
-All of the code is organized into folders. For example, Chapter02.
+모든 코드는 폴더에 각각 정리되어 있습니다.
 
-The code will look like the following:
+코드는 이렇게 생겼습니다:
 ```
 class Point:
     def __init__(self, lat, long):
@@ -57,28 +56,26 @@ class Point:
         self.long = long
 ```
 
-**Following is what you need for this book:**
-This book will appeal to team leads, software architects and senior software engineers who would like to work on their legacy systems to save cost and improve efficiency. A strong understanding of Programming is assumed.
+**아래 내용은 책을 공부할 때에서 필요한 것들 입니다:**
+이 책은 레거시 시스템의 효율성과 비용을 아끼기 원하는 팀 부서장급, 소프트웨어 아키텍트, 그리고 시니어 개발자들에게 어필이 될 수 있습니다. 높은 수준의 프로그래밍에 대한 이해가 요구 됩니다.
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-10).
-### Software and Hardware List
-| Chapter | Software required | Hardware required |
+아래 정렬된 소프트웨어와 하드웨어 요구사항으로 책의 있는 모든 코드 파일을 실행 할 수 있습니다.
+### 소프트웨어 및 하드웨어 리스트
+| 쳅터 | 필수 요구 소프트웨어 | 필수 요구 하드웨어 |
 | -------- | ------------------------------------ | ----------------------------------- |
-|1, 2, 3, 4, 5, 6, 7, 8, 9, 10  |Python 3.7  |System with 4GB RAM  |
-|10  |Docker  |System with 4GB RAM  |
+|1, 2, 3, 4, 5, 6, 7, 8, 9, 10  |Python 3.7  | 4GB RAM 의 시스템 |
+|10  |Docker  | 4GB RAM 의 시스템 |
 
-### Related products
+### 관련된 프로젝트
 * Secret Recipes of the Python Ninja [[Packt]](https://www.packtpub.com/application-development/secret-recipes-python-ninja?utm_source=github&utm_medium=repository&utm_campaign=9781788294874 ) [[Amazon]](https://www.amazon.com/dp/1788294874)
 
 * Python Programming Blueprints [[Packt]](https://www.packtpub.com/application-development/python-programming-blueprints?utm_source=github&utm_medium=repository&utm_campaign=9781786468161 ) [[Amazon]](https://www.amazon.com/dp/1786468166)
 
-## Get to Know the Author
+## 저자를 알아보자
 **Mariano Anaya**
-is a software engineer who spends most of his time creating software with Python and mentoring fellow programmers. Mariano's main areas of interests besides Python are software architecture, functional programming, distributed systems, and speaking at conferences.
+는 대부분의 시간을 파이썬을 활용하여 소프트웨어를 개발하고 동료 프로그래머들을 멘토링하는 데에 할애하는 소프트웨어 엔지니어 입니다. 파이썬을 제외한 그의 주요 관심사는 소프트웨어 아키텍쳐, 함수형 프로그래밍, 분산형 시스템, 그리고 컨퍼런스에서 발표하는 것입니다. 
 
-He was a speaker at Euro Python 2016 and 2017. To know more about him, you can refer to his GitHub account with the username rmariano.
-
-His speakerdeck username is rmariano.
+그는 Euro Python 2016 and 2017 에서 발표를 맡았었습니다. 그에 대해서 더 알고 싶다면 그의 깃헙 계정을 참고하세요(username rmariano).
 
 
 ### Suggestions and Feedback
