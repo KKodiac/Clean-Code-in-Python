@@ -47,7 +47,7 @@ alt="https://www.packtpub.com/" border="5" /></a>
 모든 코드는 폴더에 각각 정리되어 있습니다.
 
 코드는 이렇게 생겼습니다:
-```
+```py
 class Point:
     def __init__(self, lat, long):
         self.lat = lat
