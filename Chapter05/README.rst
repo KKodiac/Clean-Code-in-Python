@@ -38,22 +38,17 @@ Chapter 05 - 데코레이터[Decorators]
 
     1.1 ``decorator_wraps_1.py``
 
-2. 
-Don't have side effects on the main body of the decorator. This will run
-   at parsing time, and will most likely fail.
+2. 데코레이터 함수에 부작용이 있도록 만들지 마세요. 파싱 시에 실행이 되기 때문에 돌아가지 않을 것 입니다.
 
     2.1 ``decorator_side_effects_1.py``
 
     2.2 ``decorator_side_effects_2.py``
 
-3. 
+3. 데코레이터 함수가 wrapped 된 함수와 같은지 확인하세요(inspection, signature checking 등에 있어서..).
 
-Make sure the decorated function is equivalent to the wrapped one, in
-   terms of inspection, signature checking, etc.
+    3.1 함수, 메서드, 정적 메서드, 클라스 메서드 등에 활용될 수 있는 데코레이터를 생성하세요
 
-    3.1 Create decorators that work for functions, methods, static methods, class methods, etc.
-
-    3.2 Use the ``wrapt`` package to create effective decorators.
+    3.2 ``wrapt`` 패키지를 활용하여 효과적인 데코레이터를 생성하세요
 
 
 다른 주제

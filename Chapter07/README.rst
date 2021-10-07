@@ -1,33 +1,33 @@
-Clean Code in Python - Chapter 7: Using Generators
-==================================================
+제너레이터를 사용하는 법
+==================
 
-Run the tests::
+테스트 실행 방법::
 
     make test
 
 
-Working With Generators
------------------------
-1. A First Glimpse at Generators: ``generators_1.py``
+제너레이터를 사용하는 방법
+--------------------
+1. 제너레이터와의 첫 조우: ``generators_1.py``
 
-2. The States of a Generator: ``generators_2.py``
-
-
-Idiomatic Iteration
--------------------
-1. Idioms for Iteration in Python: ``generators_pythonic_1.py``
-
-2. The Iterator Design Pattern, the Python way
-
-   2.1. A first approach of iteration with the iteration pattern: ``generators_pythonic_2.py``
-
-   2.2. The idiomatic way: using an Iterator: ``generators_pythonic_3.py``
+2. 제너레이터의 다양한 상태: ``generators_2.py``
 
 
-Coroutines
-----------
-1. The Methods of the Generator Interface: ``generators_coroutines_1.py``
+관용적 반복(Idiomatic Iteration)
+------------------------------
+1. 파이썬에서의 관용적 반복: ``generators_pythonic_1.py``
 
-2. Working with Coroutines: ``generators_coroutines_2.py``
+2. 파이썬만의 반복문 디자인 패턴
 
-3. Delegating Coroutines: ``generators_yieldfrom_{2..3}.py``
+   2.1. 반복문 패턴을 사용한 반복문: ``generators_pythonic_2.py``
+
+   2.2. 관용적인 방법: Iterator를 활용하는 법: ``generators_pythonic_3.py``
+
+
+코루틴(Coroutines)
+-----------------
+1. 제너레이터 인터페이스: ``generators_coroutines_1.py``
+
+2. 코루틴과 함께 사용하는 법: ``generators_coroutines_2.py``
+
+3. 코루틴 위임 방법: ``generators_yieldfrom_{2..3}.py``

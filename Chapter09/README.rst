@@ -1,6 +1,6 @@
-Clean code in Python - Chapter 09: Common design patterns
+일반적인 디자인 패턴
 =========================================================
 
-Run tests with::
+테스트 실행하는 방법::
 
     make test

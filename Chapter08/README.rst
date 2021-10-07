@@ -1,29 +1,28 @@
-Clean code in Python - Chapter 8: Unit testing and refactoring
+유닛 테스트 그리고 리팩토링(Unit testing and refactoring)
 ==============================================================
 
-Install the dependencies::
+의존성 파일을 설치하세요::
 
     make setup
 
 
-Run the tests::
+테스트 실행 하는 방법::
 
     make test
 
 
-Running extra test cases
+추가적인 테스트 케이스 실행 방법
 ^^^^^^^^^^^^^^^^^^^^^^^^
-For example for to try the mutation testing, or coverage, you can use the
-following command::
+예를들어 mutation testing 또는 coverage 해보기 위해서는 아래 명령어를 실행하시면 됩니다::
 
     make coverage
     make mutation
 
-There are two test cases for each one (1 & 2), which can be specified in the
-command. For example::
+
+명령어에서 지정할 수 있는 두개의 테스트 케이스가 각각 있습니다(1 & 2). 예를 들어::
 
     make coverage CASE=1
     make mutation CASE=1
 
-As usual, if you don't have the ``make`` command available, you can always run
-the code manually with ``python3 <filename>.py``.
+항상 그렇듯, ``make`` 명령어가 제공되지 않는다면, 코드를 직접 ``python3 <filename>.py`` 를
+통해 실행 시킬수 있습니다.
