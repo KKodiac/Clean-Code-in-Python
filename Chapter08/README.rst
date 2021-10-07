@@ -1,4 +1,4 @@
-유닛 테스트 그리고 리팩토링(Unit testing and refactoring)
+Chapter 08 - 유닛 테스트 그리고 리팩토링(Unit testing and refactoring)
 ==============================================================
 
 의존성 파일을 설치하세요::
