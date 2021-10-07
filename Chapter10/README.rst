@@ -1,4 +1,4 @@
-Clean architecture
+Chapter 10 - Clean architecture
 ===================
 
 예시를 실행하기 위한 필요 도구:
