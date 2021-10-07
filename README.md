@@ -1,10 +1,8 @@
-# Clean Code in Python
+# Clean Code in Python (클린코드 : 파이썬)
 
-<a href="https://www.packtpub.com/application-development/clean-code-python?utm_source=github&utm_medium=repository&utm_campaign=9781788835831 "><img src="https://d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B09608_MockupCoverNew.png" alt="Clean Code in Python" height="256px" align="right"></a>
+[원본](https://github.com/PacktPublishing/Clean-Code-in-Python) 저장소의 포크로 각 챕터에 해당하는 디렉토리 내의 README.md 파일 등을 한글로 번역하였습니다.
 
-This is the code repository for [Clean Code in Python](https://www.packtpub.com/application-development/clean-code-python?utm_source=github&utm_medium=repository&utm_campaign=9781788835831 ), published by Packt.
-
-**Refactor your legacy code base**
+이 저장소는 Packt가 출시한 [Clean Code in Python](https://www.packtpub.com/application-development/clean-code-python?utm_source=github&utm_medium=repository&utm_campaign=9781788835831 )의 코드 예시를 다루는 저장소 입니다.
 
 ## 이 책은 어떠한 내용을 갖고 있나요?
 파이썬은 현재 소프트웨어 개발, 시스템 관리, 그리고 데이터 처리 등 다양한 분야에서 사용되고 있습니다. 이 분야에서 많은 개발 경험이 있는 전문가들은 안좋은 코드에 의해 일어나는 비효율성, 문제발생, 그리고 다른 위험들을 보여주는 예시를 찾을 수 있습니다. 이 책을 읽은 후, 독자들은 이러한 문제들을 이해하고, 어떻게 고쳐야 하는 지를 알게 될 것입니다.
