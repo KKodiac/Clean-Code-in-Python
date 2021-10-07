@@ -1,7 +1,7 @@
 Chapter 05 - 데코레이터[Decorators]
 =======================
 
-Run the tests with::
+테스트는 아래 명령어로 실행하세요::
 
     make test
 
@@ -34,18 +34,21 @@ Run the tests with::
 데코레이터를 생성할 시 피해야 할 것
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. ``functools.wraps`` 를 사용해서 기존 어트리뷰트의 특성(property) 을 유지한다(docstring, name, 등 과 같은.)
+1. ``functools.wraps`` 를 사용해서 기존 어트리뷰트의 특성(property) 을 유지한다(docstring, name, 등과 같은...)
 
     1.1 ``decorator_wraps_1.py``
 
-2. Don't have side effects on the main body of the decorator. This will run
+2. 
+Don't have side effects on the main body of the decorator. This will run
    at parsing time, and will most likely fail.
 
     2.1 ``decorator_side_effects_1.py``
 
     2.2 ``decorator_side_effects_2.py``
 
-3. Make sure the decorated function is equivalent to the wrapped one, in
+3. 
+
+Make sure the decorated function is equivalent to the wrapped one, in
    terms of inspection, signature checking, etc.
 
     3.1 Create decorators that work for functions, methods, static methods, class methods, etc.
@@ -53,10 +56,10 @@ Run the tests with::
     3.2 Use the ``wrapt`` package to create effective decorators.
 
 
-Other Topics
-^^^^^^^^^^^^
+다른 주제
+^^^^^^^
 
-* The DRY Principle with Decorators (reusing code).
-* Separation of Concerns with Decorators.
+* 데코레이터와 DRY(Don't Repeat Yourself: 같은 말 반복하지마라, 코드 재사용) 법칙
+* 데코레이터와 Separation of Concerns(SoC: 프로그램 디자인 법칙 중 하나, 프로그램을 모듈로 나누어 설계).
 
-    Listings: ``decorator_SoC_{1,2}.py``
+    나열된 예시: ``decorator_SoC_{1,2}.py``
